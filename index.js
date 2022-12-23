@@ -1,16 +1,16 @@
 //javascript
+//Get a reference to hexInput and inputColor DOM elements
+//Create a keyup event handler for hexInput
+//Check if hex color is valid
+//If hex color is valid, update the background color of inputColor
 
-//check to see whether the input from the user is a valid
-//hex color
 
-//1. #000000 or 000000
-//2. check the length - should be either 3 or 6 characters
 
 const isValidHex = (hex) => {
     if(!hex) return false;
-
+    
     const strippedHex = hex.replace('#', '');
     return strippedHex.length === 3 || strippedHex.length === 6;
 }
 
-console.log(isValidHex("00000"))
+console.log(strippedHex)
