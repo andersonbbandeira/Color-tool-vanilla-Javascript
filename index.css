@@ -14,8 +14,8 @@ body {
 }
 
 .title {
-    text-align: center;
-    margin: 20px;
+    text-align: left;
+    margin: 20px 0;
     color: #d6d5ac;
 }
 
@@ -37,9 +37,10 @@ input[type="text"] {
 
 .box {
     height: 100px;
-    width: 100%;
+    width: 300px;
     background-color: #c6d5ac;
     margin-bottom: 25px;
+    border-radius: 5px;
 }
 
 .toggle {
