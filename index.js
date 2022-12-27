@@ -22,8 +22,6 @@ const isValidHex = (hex) => {
     return strippedHex.length === 3 || strippedHex.length === 6;
 }
 
-
-
 const convertHexToRGB = (hex) => {
   if(!isValidHex(hex)) return null;
   
@@ -58,16 +56,11 @@ const alterColor = (hex, percentage) => {
   
   const newR = increaseWithin0To255(r,amount);
   const newG = increaseWithin0To255(g,amount);
-  const newB = increaseWithin0To255(b,amount)
-  console.log({newR, newG, newB});
+  const newB = increaseWithin0To255(b,amount);
   return convertRGBToHex(newR, newG, newB);
 }
 
 const increaseWithin0To255 = (hex, amount) => {
-  // const newHex = hex + amount;
-  // if(newHex > 255) return 255;
-  // if(newHex < 0) return 0;
-  // return newHex;
   return Math.min(255, Math.max(0, hex + amount));
 }
 
